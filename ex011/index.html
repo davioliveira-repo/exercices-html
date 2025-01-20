@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Neste site temos imagens dinâmicas para ajudar na funcionalidade em diferentes dispositivos, tente abrir esse site em outro dispositivo ou apenas altere o tamanho do navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-300.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-700.png" type="image/png">
+        <img src="imagens/foto-1000.png" alt="image">
+        <!-- Para adicionar flexibilidade a imagem você precisa utilizar a tag SOURCE, indicando a largura máxima + 50px, esses 50px são uma folga para não adicionar a barra de scroll -->
+        <!-- Sempre adicione as tags SOURCE uma acima da outra -->
+        <h1>Adicionando áudio ao site</h1>
+        <audio controls preload="metadata" loop>
+            <source src="midia/musica.mp3" type="audio/mpeg">
+            <source src="midia/musica.wav" type="audio/wav">
+            <source src="midia/musica.ogg" type="audio/ogg">
+            <p>Infelizmente seu navegador não consegue reproduzir esse tipo de áudio, <a href="midia/musica.mp3">clique aqui para baixar o arquivo</a></p>
+        </audio>
+        <!-- Tag AUDIO para reproduzir audios, tag SOURCE para carregar o audio, parâmetro CONTROLS para mostrar o player da música, parâmetro PRELOAD para decidir quando o arquivo será baixado, utilizando AUTO para baixar assim que abrir o site (perigoso), METADATA para baixar assim que der play (seguro) -->
+    </picture>
+</body>
+</html>

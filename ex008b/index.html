@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+    <h2>Código Fonte / Pré Formatação</h2>
+    <p>O comando document.getElementById('teste') é escrito em linguagem JavaScript (JS)</p> <!-- Nesse parágrafo, as letras não possuem o mesmo tamanho, pois a fonte não é monoespaçada, utilizando o comando CODE, nós resolvemos esse problema -->
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript (JS)</p>
+    <pre>
+        <code>
+            n = int(input('Digite um Número: '))
+            if n % 2 == 0:
+                print(f'O número {n} é PAR')
+            else:
+                print(f'O número {n} é ÍMPAR')
+            print('Fim do Programa')
+        </code>
+    </pre>
+    <!-- O Comando CODE não formata texto com indentação, porém, podemos resolver isso envelopando a tag CODE com a tag PRE -->
+    <h2>Citações Simples</h2>
+    <p>Como diria um velho amigo: <q>O computador é um burro muito rápido</q></p>
+    <!-- Para fazermos citações, utilizamos a tag Q, assim damos sentido a citação em destaque -->
+    <p>Segundo Jeff Noble no seu livro HTML para Leigos:
+        <blockquote>
+            A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto
+        </blockquote>
+    </p>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="Hyper Text Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr></p>
+    <!-- Podemos demarcar uma abreviação escrevendo a tag ABBR -->
+    <h2>Texto Invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo HTML e CSS</bdo></p>
+</body>
+</html>

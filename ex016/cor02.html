@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradientes em CSS</title>
+    <style>
+        *{ /*Configurações Globais das CSS*/
+            height: 100%;
+        }
+        /*Para utilizarmos o gradiente na vertical sem fracionar, utilizamos uma configuração especial global das CSS*/
+        body{
+            background-image: linear-gradient(to bottom, #515ED1, #9D35AE, #D72E80, #F7762F);
+            /*Parâmetros do linear-gradient (bottom, top, right, left)*/
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: white;">Testando Gradientes</h1>
+</body>
+</html>
